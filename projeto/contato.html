@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Wesley Triches</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                </ul>
+
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Entre em contato</h1>
+                <form>
+                    <fieldset>
+                        <legend>Cadastro</legend>
+                        <label for="nome">Nome</label>
+                        <input type="text"  name="nome" placeholder="Digite o seu nome:" autocomplete="on" required> <!- o name é pra vincular o texto -> 
+                        <br>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="Digite seu email" required>
+                        <br>
+                        <label for="dt_nascimento">Data de Nascimento</label>
+                        <input type="date" name="dt_nascimento" placeholder="Digite sua data de nascimento">
+                        <br>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <label for="rua">Rua</label>
+                        <input type="text" name="rua" size="30" placeholder="Logradouro">
+                        <br><br>
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="bairro" size="30" placeholder="Bairro">
+                        <br><br>
+                        <label for="cidade">Cidade</label>
+                        <select name="cidade" required>
+                            <option></option>
+                            <option>Marau</option>
+                            <option>Passo Fundo</option>
+                            <option>Casca</option>
+                            <option>Ronda Alta</option>
+                            <option>Tapejara</option>
+                            <option>Vila Maria</option>
+                            <br><br>
+                        </select>
+
+                        <label for="estado">Estado</label>
+                        <select name="estado" required>
+                            <option></option>
+                            <option selected>RS</option>
+                            <option>SC</option>
+                            <option>PR</option>
+                        </select>
+                        <br><br>
+                        <label for="numero">Número</label>
+                        <input type="number" name="numero" placeholder=" número">
+                        <label for="cep">CEP</label>
+                        <input type="text" name="cep" size="8" maxlength="8" placeholder="CEP">
+                    </fieldset>
+                    <br>
+
+                    <h4>Usuário</h4>
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário">
+                    <br>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                    <br><br>
+
+                    <p>Deseja receber propagandas?</p>
+                    <input type="radio" id="sim" name="propaganda">
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="propaganda">
+                    <label for="nao">Não</label>
+                    <input type="submit" id="nao" value="Enviar">
+
+                    <p>Você leu e concorda con os termos de uso do nosso site?</p>
+                    <label for="termos">Sim</label>
+                    <input type="checkbox" name="termos">
+                </form>
+            </article>
+        </main>
+        <footer></footer>
+    </body>
+</html>
+
